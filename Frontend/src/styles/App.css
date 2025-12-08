@@ -20,6 +20,12 @@ body {
   --quaternary: DBE2EF;
 }
 
+@theme{
+  --color-primary: #F9F7F7;
+  --color-secondary: #3F72AF;
+  --color-third: #112D4E;
+  --color-fourth: #DBE2EF;
+}
 
 
 
