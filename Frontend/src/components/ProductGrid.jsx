@@ -1,8 +1,5 @@
-const products = [
-  { id: 1, name: "Nike Air Max", price: 1500000, image: "/p1.png" },
-  { id: 2, name: "Adidas Ultraboost", price: 1800000, image: "/p2.png" },
-  { id: 3, name: "Casual Shirt", price: 120000, image: "/p3.png" },
-];
+import './ProductGrid.css';
+import products from "../data/product";
 
 export default function ProductGrid() {
   return (
@@ -15,7 +12,7 @@ export default function ProductGrid() {
             <img src={p.image} alt={p.name} />
             <h3>{p.name}</h3>
             <p>Rp {p.price.toLocaleString()}</p>
-            <button>Add to Cart</button>
+            <button>Details</button>
           </div>
         ))}
       </div>

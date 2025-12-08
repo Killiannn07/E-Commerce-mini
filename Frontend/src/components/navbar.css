@@ -1,0 +1,34 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background: #112D4E;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: 'helvetica neue';
+}
+
+.search {
+  padding: 8px 12px;
+  width: 40%;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #111;
+}
+
+.nav-icons span {
+  margin-left: 20px;
+  cursor: pointer;
+  color: white;
+  font-family: 'helvetica neue';
+  font-weight: 500;
+}
