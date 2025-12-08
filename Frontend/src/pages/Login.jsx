@@ -1,28 +1,13 @@
 import React from 'react';
-import './Login.css';
-import { FaUser, FaUnlock } from "react-icons/fa";
+import Login from '../components/Login';
 
-export default function Login() {
+
+export default function LoginPage() {
   return (
-    <div className="wrapper">
-        <form action="">
-            <h1>Login</h1>
-            <div className="input-box">
-                <input type="email" placeholder='E-mail' required/>
-                <FaUser/>
-            </div>
-            <div className="input-box">
-                <input type="password" placeholder='Password' required/>
-                <FaUnlock/>
-            </div>
-            <button type="submit" className="btn">Login</button>
-            <div className="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
-            </div>
-
-        </form>
-
-
-    </div>
+    <>
+      <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
+      <Login />
+      </div>
+    </>
   );
 }
