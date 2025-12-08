@@ -1,8 +1,9 @@
+import './categoryList.css';
 const categories = [
   { id: 1, name: "Shoes", icon: "👟" },
   { id: 2, name: "Clothes", icon: "👕" },
   { id: 3, name: "Bags", icon: "👜" },
-  { id: 4, name: "Electronics", icon: "📱" },
+  { id: 4, name: "Pants", icon: "📱" },
 ];
 
 export default function CategoryList() {

@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
+import { FaShoppingCart } from "react-icons/fa";
+import './navbar.css';
 export default function Navbar() {
+  const navigate = useNavigate();
+  
   return (
     <nav className="navbar">
       <div className="logo">AnjayStore</div>
@@ -10,8 +15,8 @@ export default function Navbar() {
       />
 
       <div className="nav-icons">
-        <span>Login</span>
-        <span>Cart 🛒</span>
+        <span onClick={() => navigate("/Login")}>Login</span>
+        <span onClick={() => navigate("/Cart")}>Cart <FaShoppingCart/></span>
       </div>
     </nav>
   );
