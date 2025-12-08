@@ -1,20 +1,5 @@
+@import "tailwindcss";
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 40px;
-  background: #112D4E;
-  border-bottom: 1px solid #eee;
-  width: 100%;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  font-family: 'helvetica neue';
-}
 
 .search {
   padding: 8px 12px;
@@ -26,9 +11,18 @@
 }
 
 .nav-icons span {
+  
+  flex-direction: row;
   margin-left: 20px;
   cursor: pointer;
   color: white;
   font-family: 'helvetica neue';
   font-weight: 500;
+}
+
+:root{
+  --primary: 112D4E;
+  --secondary: 3F72AF;
+  --third: DBE2EF;
+  --fourth: F9F7F7;
 }
