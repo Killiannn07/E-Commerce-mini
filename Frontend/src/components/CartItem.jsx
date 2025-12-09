@@ -1,4 +1,9 @@
+import { useState, } from "react";
+
 export default function CartItem({ img, title, variant, price, stock }) {
+  const [qty, setQty] = useState(1);
+  
+
   return (
     <div className="flex items-start gap-4 pb-6 border-b">
       {/* IMAGE */}
@@ -23,14 +28,22 @@ export default function CartItem({ img, title, variant, price, stock }) {
       {/* QTY + PRICE */}
       <div className="flex flex-col items-end gap-2">
         {/* Quantity Box */}
-        <select className="border rounded-lg px-2 py-1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
+        <select
+          className="border rounded-lg px-2 py-1"
+          value={qty}
+          onChange={(e) => setQty(Number(e.target.value))}
+        >
+          {[...Array(10)].map((_, i) => (
+            <option key={i} value={i + 1}>
+              {i + 1}
+            </option>
+          ))}
         </select>
 
         {/* Price */}
-        <p className="font-semibold">Rp.{price.toFixed(3)}</p>
+        <p className="font-semibold">
+          Rp {(price * qty).toLocaleString("id-ID")}
+        </p>
       </div>
     </div>
   );

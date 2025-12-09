@@ -56,7 +56,7 @@ export default function Register() {
           className="py-3 px-1 bg-secondary w-1/2 m-4 mx-auto block font-bold text-white rounded-2xl cursor-pointer hover:bg-primary hover:scale-105"
           onClick={() => canSubmit && navigate("/")}
         >
-          Login
+          Register
         </button>
         <div className="justify-center">
           <p className="text-center text-black">
