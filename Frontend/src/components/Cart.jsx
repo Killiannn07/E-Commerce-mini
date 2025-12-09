@@ -8,26 +8,26 @@ export default function Cart() {
         {/* List Barang */}
         <div className="lg:col-span-2 space-y-10 bg-fourth p-6 rounded-lg shadow-lg">
           <CartItem
-            img="/product_1.jpg"
+            img="/product_1.JPG"
             title="Sugeng Tumbler"
             variant="White"
-            price={1000.0}
+            price={100000}
             stock="In stock"
           />
           <CartItem
-            img="/product_2.jpg"
+            img="/product_2.JPG"
             title="Adidas Samba"
             variant="Red — 41"
-            price={32.0}
+            price={3200000}
             stock="In stock"
           />
 
           <CartItem
-            img="/product_3.jpg"
+            img="/product_3.JPG"
             title="Nike Airforce"
             variant="Black — 41"
-            price={32.0}
-            stock="Ships in 3–4 weeks"
+            price={320000}
+            stock="Ships in 3-4 weeks"
           />
         </div>
         {/* SUMMARY BOX */}
